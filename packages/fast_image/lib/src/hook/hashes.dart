@@ -2,16 +2,16 @@
 //    dart tool/generate_asset_hashes.dart
 
 const assetHashes = <String, String>{
-  'fastimg_windows_arm64.dll': 'd2811964f1fdb58b05cbf64440dbd5bc',
-  'fastimg_windows_x86_64.dll': '544ffa46ebd30ca625bdcbb949c6aa56',
-  'libfastimg_android_arm64.so': '92d8304aec9ea73416ded1fd65de1b04',
-  'libfastimg_android_armv7.so': '19dedde160809c23d62e103397a34ebe',
-  'libfastimg_android_x86_64.so': 'adba91c13bcff17fec6f7c48ade70971',
-  'libfastimg_ios_arm64.dylib': 'c0c25a89fe8eb9ab0854c0cc751591a5',
-  'libfastimg_ios_sim_arm64.dylib': '1da1dcbc70178110a1e3661eaf59a266',
-  'libfastimg_ios_sim_x86_64.dylib': '2146cddef9ab1c2b1cc13efbf66f018a',
-  'libfastimg_linux_aarch64.so': 'e25cd1958ecca40731f8b49faa20b3b6',
-  'libfastimg_linux_x86_64.so': '8b85e6348af8bb783668be5dc54b4aed',
-  'libfastimg_macos_arm64.dylib': '66866e152da9cffd31e0fbeaa24d30c2',
-  'libfastimg_macos_x86_64.dylib': 'ad2ff7a5f8df098df9a225b60b12c4fa',
+  'fastimg_windows_arm64.dll': '20e3523d19240c101b97d335bebcc65d',
+  'fastimg_windows_x86_64.dll': '33de57e9288f7c94b6c8cac9e4e61e40',
+  'libfastimg_android_arm64.so': 'c5840d5582ab9d0bcb0b6642ca68cfa8',
+  'libfastimg_android_armv7.so': 'c9d671bd70a49d8df3bd59e6337d1bf5',
+  'libfastimg_android_x86_64.so': 'b3e0370517869f874729760d08036240',
+  'libfastimg_ios_arm64.dylib': '41ab4656d551dca2d441bb2f23243501',
+  'libfastimg_ios_sim_arm64.dylib': '94ec60304962e72b27f67e88e7b453a1',
+  'libfastimg_ios_sim_x86_64.dylib': '9b37cfa5ecc3fc78f860607cd761150f',
+  'libfastimg_linux_aarch64.so': '38b17dafdc8f0f9b9081ac1836d01523',
+  'libfastimg_linux_x86_64.so': 'd14c4e16e0f53649fee574970f2013aa',
+  'libfastimg_macos_arm64.dylib': '155c1d0d55acf6fc186bfb879502c2fa',
+  'libfastimg_macos_x86_64.dylib': '35d639e034b0bb8155556e764b81b1d5',
 };

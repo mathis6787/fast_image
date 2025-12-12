@@ -5,8 +5,9 @@ import 'package:crypto/crypto.dart';
 import 'package:fast_image/src/hook/targets.dart';
 import 'package:fast_image/src/hook/version.dart';
 
-Uri downloadUri(String target) =>
-    Uri.parse('https://github.com/hawkkiller/fast_image/releases/download/$version/$target');
+Uri downloadUri(String target) => Uri.parse(
+  'https://github.com/mathis6787/fast_image/releases/download/$version/$target',
+);
 
 /// Downloads the asset for the given target OS and architecture.
 Future<File> downloadAsset({
@@ -15,7 +16,9 @@ Future<File> downloadAsset({
   required IOSSdk? iOSSdk,
   required Directory outputDirectory,
 }) async {
-  final targetName = targetOS.dylibFileName(createTargetName(targetOS, targetArchitecture, iOSSdk));
+  final targetName = targetOS.dylibFileName(
+    createTargetName(targetOS, targetArchitecture, iOSSdk),
+  );
   final uri = downloadUri(targetName);
   final request = await HttpClient().getUrl(uri);
   final response = await request.close();
@@ -29,10 +32,18 @@ Future<File> downloadAsset({
   return library;
 }
 
-String createTargetName(OS targetOS, Architecture targetArchitecture, IOSSdk? iOSSdk) {
+String createTargetName(
+  OS targetOS,
+  Architecture targetArchitecture,
+  IOSSdk? iOSSdk,
+) {
   final buffer = StringBuffer('fastimg_');
 
-  final supportedTarget = getNameForTarget(targetOS, targetArchitecture, iOSSdk);
+  final supportedTarget = getNameForTarget(
+    targetOS,
+    targetArchitecture,
+    iOSSdk,
+  );
   buffer.write(supportedTarget);
   return buffer.toString();
 }
