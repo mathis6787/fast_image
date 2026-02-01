@@ -5,7 +5,7 @@ publish_to: none
 resolution: workspace
 
 environment:
-  sdk: ^3.11.0-36.0.dev
+  sdk: ^3.10.8
 
 # Add regular dependencies here.
 dependencies:
